@@ -5,7 +5,11 @@
 name: build_all
 permissions: read-all
 
-on: push
+on: 
+  push:
+    branches:
+      - master
+  workflow_dispatch: {}
 
 env:
   WINDOWS_BASEKIT_URL: https://registrationcenter-download.intel.com/akdlm/IRC_NAS/b380d914-366b-4b77-a74a-05e3c38b3514/intel-oneapi-base-toolkit-2025.0.0.882_offline.exe
