@@ -5,7 +5,7 @@
 name: build_all
 permissions: read-all
 
-on: 
+on:
   push:
     branches:
       - master
